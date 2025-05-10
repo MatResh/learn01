@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-@app.route('/linreg', methods=['POST'])
+@app.route('/', methods=['POST'])
 def linreg():
     data = request.json
     xdata = data.get('xdata')
